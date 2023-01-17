@@ -47,4 +47,12 @@ class TuApplicationTests {
 		String expected = "iou";
 		assertEquals(expected, StringUtils.uniqueVowels(input));
 	}
+
+	// Try uniqueVowels when special no vowels string input
+	@Test
+	public void testStringUtilsUniqNoVowels() {
+		String input = "ljlhkjhk";
+		String expected = "";
+		assertEquals(expected, StringUtils.uniqueVowels(input));
+	}
 }
